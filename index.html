@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,13 +21,6 @@
 
         <!-- Coluna principal -->
         <div class="hero__main">
-          <span class="badge reveal" data-delay="1">
-            <span class="badge__dot"></span>
-            <span class="badge__brand">Bruno Bettini</span>
-            <span class="badge__sep"></span>
-            Para palestrantes que querem parar de patinar
-          </span>
-
           <h1 class="hero__title">
             <span class="reveal" data-delay="2">Desvendando</span>
             <span class="reveal" data-delay="3">o <em>Mercado</em></span>
@@ -39,13 +32,6 @@
             de palestras no Brasil, e por que a maioria dos palestrantes nunca
             chega perto dele.
           </p>
-
-          <div class="offer reveal" data-delay="6">
-            <span class="offer__tag">Oferta de lançamento</span>
-            <span class="offer__from">de R$ 197</span>
-            <span class="offer__now">R$ 47</span>
-            <span class="offer__note">à vista, acesso imediato</span>
-          </div>
 
           <div class="hero__actions reveal" data-delay="6">
             <a class="btn btn--primary" href="#oferta">
@@ -206,64 +192,13 @@
       </ol>
     </section>
 
-    <!-- ============ SEÇÃO 04 :: SITE vs INSTAGRAM ============ -->
-    <section class="vs" id="vs">
-      <div class="vs__head">
-        <p class="eyebrow" data-reveal><span class="eyebrow__num">04</span> Sua estrutura</p>
-        <h2 class="vs__title" data-reveal>O cliente que compra palestra não quer te seguir. Ele quer te contratar.</h2>
-        <p class="vs__body" data-reveal>
-          Seu Instagram não é seu. Se a rede mudar a regra amanhã, você perde tudo.
-          Um cliente que compra palestra não quer ver seus stories, ele quer
-          entender, em um lugar só, o que você faz e como contratar.
-        </p>
-        <p class="vs__body" data-reveal>
-          Na aula eu mostro por que estrutura profissional não é luxo, é o que
-          decide se você entra pra ganhar ou só pra participar. (E sim, esta página
-          que você está lendo é exatamente o tipo de estrutura que separa amador de
-          profissional.)
-        </p>
-      </div>
-
-      <div class="vs__compare">
-        <article class="vs__card vs__card--neg" data-tilt data-reveal>
-          <div class="vs__cardhead">
-            <span class="vs__tag">Efêmero</span>
-            <svg class="vs__icon" viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="vs__cardtitle">Instagram</h3>
-          <ul class="vs__list vs__list--neg">
-            <li>Não é seu, é da plataforma</li>
-            <li>Some no feed em horas</li>
-            <li>O cliente não quer te seguir</li>
-            <li>Regra muda e você perde tudo</li>
-          </ul>
-        </article>
-
-        <span class="vs__badge" aria-hidden="true">VS</span>
-
-        <article class="vs__card vs__card--pos" data-tilt data-spot data-reveal>
-          <div class="vs__cardhead">
-            <span class="vs__tag">Permanente</span>
-            <svg class="vs__icon" viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 11 12 4l8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="vs__cardtitle">Seu site</h3>
-          <ul class="vs__list vs__list--pos">
-            <li>Você controla 100%</li>
-            <li>Começa e termina a comunicação</li>
-            <li>Mostra o que faz e como contratar</li>
-            <li>Transforma curioso em cliente</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
     <!-- ============ SEÇÃO 05 :: QUEM SOU EU (dark) ============ -->
     <section class="bio section--dark" id="bio">
       <div class="bio__inner">
         <figure class="bio__photo" data-parallax>
           <span class="bio__frame" aria-hidden="true"></span>
-          <span class="bio__img" role="img" aria-label="Retrato de Bruno Bettini">
-            <span class="bio__initials" aria-hidden="true">BB</span>
+          <span class="bio__img">
+            <img src="assets/bruno.jpg" alt="Retrato de Bruno Bettini" width="420" height="525" loading="lazy" />
           </span>
         </figure>
 
@@ -337,31 +272,35 @@
     <section class="oferta section--dark" id="oferta">
       <canvas class="oferta__particles" aria-hidden="true"></canvas>
       <div class="oferta__card" data-spot data-reveal>
-        <div class="oferta__main">
-          <p class="eyebrow eyebrow--gold"><span class="eyebrow__num">07</span> A oferta</p>
-          <h2 class="oferta__title">Tudo isso por <span class="gold">R$ 47</span></h2>
-          <p class="oferta__text">O mapa completo do mercado, gravado e na sua mão.</p>
-          <ul class="oferta__list">
-            <li>Acesso imediato à gravação completa</li>
-            <li>Assista quantas vezes quiser, no seu ritmo</li>
-            <li>O mapa de onde está o dinheiro, ponto a ponto</li>
-            <li>Critérios pra saber se seu material está pronto</li>
-          </ul>
+        <p class="eyebrow eyebrow--gold eyebrow--center"><span class="eyebrow__num">07</span> A oferta</p>
+        <h2 class="oferta__title">Tudo isso por <span class="gold">R$&nbsp;47</span></h2>
+        <p class="oferta__text">O mapa completo do mercado, gravado e na sua mão.</p>
+
+        <ul class="oferta__list">
+          <li>Acesso imediato à gravação completa</li>
+          <li>Assista quantas vezes quiser, no seu ritmo</li>
+          <li>O mapa de onde está o dinheiro, ponto a ponto</li>
+          <li>Critérios pra saber se seu material está pronto</li>
+        </ul>
+
+        <div class="oferta__price">
+          <span class="oferta__pricetag">Oferta de lançamento</span>
+          <span class="oferta__priceline">
+            <span class="oferta__from">de R$ 197</span>
+            <span class="oferta__now">R$&nbsp;47</span>
+          </span>
+          <span class="oferta__cond">à vista, acesso imediato</span>
         </div>
 
-        <div class="oferta__side">
-          <div class="priceblock">
-            <span class="price__tag">Oferta de lançamento</span>
-            <span class="price__from">de R$ 197</span>
-            <span class="price__now">R$ 47</span>
-            <span class="price__note">à vista, acesso imediato</span>
-          </div>
-          <a class="btn btn--primary btn--lg" href="#">Quero acesso por R$&nbsp;47</a>
-          <p class="oferta__micro">Pagamento seguro. Acesso liberado na hora.</p>
+        <a class="btn btn--primary btn--lg oferta__cta" href="#">Quero acesso por R$&nbsp;47</a>
+
+        <div class="oferta__reassure">
           <span class="oferta__seal">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 3 4 6v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V6l-8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             7 dias de garantia
           </span>
+          <span class="oferta__bullet" aria-hidden="true"></span>
+          <span class="oferta__micro">Pagamento seguro. Acesso liberado na hora.</span>
         </div>
 
         <p class="oferta__anchor">
@@ -379,7 +318,7 @@
               <path id="sealArc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
             </defs>
             <circle class="seal__ring" cx="100" cy="100" r="90" fill="none" stroke="var(--accent)" stroke-width="2"/>
-            <circle class="seal__ring2" cx="100" cy="100" r="60" fill="none" stroke="rgba(232,185,49,0.4)" stroke-width="1" stroke-dasharray="2 5"/>
+            <circle class="seal__ring2" cx="100" cy="100" r="60" fill="none" stroke="rgba(237,125,43,0.4)" stroke-width="1" stroke-dasharray="2 5"/>
             <text class="seal__text" font-size="13" letter-spacing="3" fill="var(--primary)">
               <textPath href="#sealArc" startOffset="0">GARANTIA INCONDICIONAL  ·  7 DIAS  ·  </textPath>
             </text>
@@ -493,10 +432,14 @@
   </footer>
 
   <script>
-    // Reveal pós-carregamento (sem animacao de entrada que esconde conteudo)
-    window.addEventListener('load', () => {
+    // Revela assim que o DOM esta pronto (nao espera imagens/fontes) -> LCP do hero mais rapido
+    if (document.readyState !== 'loading') {
       document.body.classList.add('is-loaded');
-    });
+    } else {
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('is-loaded');
+      });
+    }
   </script>
   <script src="script.js" defer></script>
 

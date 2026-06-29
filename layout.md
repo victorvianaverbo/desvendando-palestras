@@ -2,13 +2,13 @@
 
 Especificacao exaustiva de direcao de arte para construcao da pagina completa.
 Base: copy.md (aprovada) + index.html/style.css (hero + secao 01 aprovados).
-Identidade alinhada a Avantik (avantikpalestras.com.br).
+Identidade visual: Apogeu do Palestrante (mesma da pagina-diagnostico): marfim + grafite + brasa.
 
 > REGRAS GLOBAIS NAO-NEGOCIAVEIS
 > - NUNCA usar travessoes (— ou –) em nenhum texto visivel. Usar virgula, ponto, dois-pontos ou parenteses.
 > - NUNCA usar separadores "·" ou "|" em microcopy. Usar ponto final.
-> - Manter SEMPRE o par tipografico DM Serif Display (titulos) + DM Sans (corpo).
-> - Manter SEMPRE a paleta de tokens abaixo. Dourado e a unica cor de destaque (sem magenta/rosa).
+> - Manter SEMPRE o trio tipografico Cormorant Garamond (titulos) + Jost (labels/kickers/botoes) + Hanken Grotesk (corpo).
+> - Manter SEMPRE a paleta de tokens abaixo. Brasa (laranja) e a unica cor de destaque (sem magenta/rosa/roxo/dourado).
 > - Toda animacao deve respeitar `@media (prefers-reduced-motion: reduce)` (desligar transform/opacity).
 > - Sem emojis.
 
@@ -16,30 +16,35 @@ Identidade alinhada a Avantik (avantikpalestras.com.br).
 
 ## SISTEMA DE DESIGN (tokens globais)
 
-### Paleta (hex exatos)
+### Paleta (hex exatos) — identidade Apogeu (marfim + grafite + brasa)
 | Token | Valor | Uso |
 |---|---|---|
-| `--bg` | `#FAFAF9` | fundo padrao (papel) |
+| `--bg` | `#F6F4F1` (marfim) | fundo padrao (papel) |
 | `--surface` | `#FFFFFF` | cards, paineis |
-| `--muted-bg` | `#F1F5F9` | fundo de dobra alternada |
-| `--text` | `#1A1A2E` | texto principal / titulos |
-| `--text-2` | `#64748B` | texto de corpo secundario |
-| `--text-muted` | `#94A3B8` | labels, legendas |
-| `--primary` | `#2E2B5F` | roxo-marinho, destaque serio |
-| `--primary-light` | `#4340A0` | hover/realce roxo |
-| `--accent` | `#E8B931` | dourado, CTA e detalhes |
-| `--accent-hover` | `#D4A522` | dourado escuro (texto sobre claro) |
-| `--accent-soft` | `rgba(232,185,49,0.10)` | preenchimento suave |
-| `--border` | `#E2E8F0` | linhas e bordas |
-| `--dark` | `#1C1C1E` | texto sobre dourado / fundo escuro base |
-| `--dark-2` | `#211F3D` | variacao escura roxa (dobras dark) |
-| `--on-dark` | `#F5F5F5` | texto sobre fundo escuro |
-| `--on-dark-2` | `#A0A8B5` | texto secundario sobre escuro |
+| `--muted-bg` | `#FBFAF8` | fundo de dobra alternada |
+| `--text` | `#1C1C20` (grafite-900) | texto principal / titulos |
+| `--text-2` | `#3A3A42` (grafite-700) | texto de corpo secundario |
+| `--text-muted` | `#8A8A94` (grafite-400) | labels, legendas |
+| `--primary` | `#D9641A` (brasa-600) | brasa escura, destaque em texto |
+| `--primary-light` | `#ED7D2B` (brasa-500) | realce brasa |
+| `--accent` | `#ED7D2B` (brasa-500) | brasa, CTA e detalhes |
+| `--accent-hover` | `#D9641A` (brasa-600) | brasa escura (texto sobre claro) |
+| `--accent-soft` | `rgba(237,125,43,0.10)` | preenchimento suave |
+| `--border` | `#ECE8E2` (areia) | linhas e bordas |
+| `--dark` | `#141417` (grafite-950) | fundo escuro base |
+| `--dark-2` | `#1C1C20` (grafite-900) | dobras dark |
+| `--dark-3` | `#141417` (grafite-950) | base de gradiente escuro |
+| `--on-dark` | `#F6F4F1` (marfim) | texto sobre fundo escuro |
+| `--on-dark-2` | `#CFCBC4` (nevoa) | texto secundario sobre escuro |
+| `--brasa-grad` | `linear-gradient(135deg,#FBB44C,#ED7D2B 50%,#C2470F)` | botoes primarios |
+
+> Blocos escuros (`.section--dark`) recebem motivo de xadrez diagonal sutil (`rgba(246,244,241,0.028)`, tile 88px), assinatura visual do Apogeu.
 
 ### Tipografia
-- Heading: `"DM Serif Display", Georgia, serif` (peso unico 400; italico disponivel).
-- Body: `"DM Sans", system-ui, sans-serif` (400, 500, 600, 700).
-- Import (ja no head): `DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1`.
+- Heading: `"Cormorant Garamond", Georgia, serif` (peso 600 para presenca; italico disponivel para enfase).
+- Labels / kickers / botoes / micro: `"Jost", system-ui, sans-serif` (400, 500, 600), uppercase com tracking.
+- Body: `"Hanken Grotesk", system-ui, sans-serif` (400, 500, 600, 700).
+- Import (ja no head): `Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600`.
 
 ### Escala tipografica de referencia
 | Papel | clamp(min, fluido, max) | line-height | letter-spacing |
